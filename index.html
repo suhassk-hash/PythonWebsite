@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+<body>
+    <py-script>
+        num=int(input("Enter any number"))
+        f=1
+        _factors=[]
+        for x in range (1,num):
+            if num%x==0:
+                f=f+1
+                _factors.append(x)
+            else:
+                f=f
+        _factors.append(num)
+        print (f)
+        print(_factors)
+        </py-script>
+</body>
+</html>
